@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"  
+    xmlns:context="http://www.springframework.org/schema/context"  
+    xsi:schemaLocation="  
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd  
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd  
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">  
+  <!-- scan the package and the sub package -->
+    <context:component-scan base-package="com.yyx" />
+  
+     <!-- don't handle the static resource -->  
+    <mvc:default-servlet-handler />  
+  
+     <!-- if you use annotation you must configure following setting -->  
+    <mvc:annotation-driven />
+
+  <!-- configure the InternalResourceViewResolver -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+    <!--
+        <property name="suffix" value=".html" />
+    -->
+    </bean>
+
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/yummy?autoReconnect=true&amp;serverTimezone=UTC"/>
+        <property name="username" value="rumia"/>
+        <property name="password" value="moonlight ray"/>
+    </bean>
+
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="packagesToScan" value="com.yyx.model"/>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>
+                <prop key="hibernate.show_sql">true</prop>
+                <prop key="hibernate.hbm2ddl.auto">update</prop>
+                <prop key="hibernate.connection.autocommit">true</prop>
+                <prop key="current_session_context_class">thread</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id="transactionManager" class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+        <property name="host" value="smtp.163.com" />
+		<property name="port" value="25" />
+		<property name="username" value="yummyyyx@163.com" />
+		<property name="password" value="yummy0test" />
+
+		<!-- The name of the property, following JavaBean naming conventions -->
+		<property name="javaMailProperties">
+			<props>
+				<prop key="mail.transport.protocol">smtp</prop>
+				<prop key="mail.smtp.auth">true</prop>
+				<prop key="mail.smtp.starttls.enable">true</prop>
+				<prop key="mail.debug">true</prop>
+			</props>
+		</property>
+    </bean>
+
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <bean id="corsInterceptor" class="com.yyx.interceptor.CorsInterceptor"/>
+        </mvc:interceptor>
+        <mvc:interceptor>
+            <mvc:mapping path="/api/customer/**"/>
+            <mvc:exclude-mapping path="/api/customer/sign-up"/>
+            <mvc:exclude-mapping path="/api/customer/sign-in"/>
+            <mvc:exclude-mapping path="/api/customer/verify-email"/>
+            <bean id="customerIdInterceptor" class="com.yyx.interceptor.CustomerIdInterceptor"/>
+        </mvc:interceptor>
+        <mvc:interceptor>
+            <mvc:mapping path="/api/restaurant/**"/>
+            <mvc:exclude-mapping path="/api/restaurant/sign-up"/>
+            <mvc:exclude-mapping path="/api/restaurant/sign-in"/>
+            <mvc:exclude-mapping path="/api/restaurant/get/**"/>
+            <bean id="restaurantIdInterceptor" class="com.yyx.interceptor.RestaurantIdInterceptor"/>
+        </mvc:interceptor>
+        <mvc:interceptor>
+            <mvc:mapping path="/api/admin/**"/>
+            <mvc:exclude-mapping path="/api/admin/sign-in"/>
+            <bean id="adminIdInterceptor" class="com.yyx.interceptor.AdminIdInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
+</beans>
