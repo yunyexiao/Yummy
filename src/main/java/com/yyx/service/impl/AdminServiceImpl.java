@@ -15,6 +15,7 @@ import java.sql.Timestamp;
 import java.time.YearMonth;
 import java.time.ZoneId;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -152,18 +153,29 @@ public class AdminServiceImpl implements AdminService {
     @Override
     @Transactional(readOnly = true)
     public Map<YearMonth, Map<String, Double>> getFinancialAffairs(YearMonth start, YearMonth end) {
+        System.out.println(start + "\t\t" + end);
         if(start.isAfter(end)) {
             throw new IllegalArgumentException("Start time " + start + " is later than end time " + end + ".");
         }
-        TransactionCriteria criteria = new TransactionCriteria();
-        criteria.setStartTime(Timestamp.valueOf(String.format("%d-%d-01 00:00:00",
-                start.getYear(), start.getMonthValue())));
-        criteria.setEndTime(Timestamp.valueOf(String.format("%d-%d-%d 23:59:59.999999999",
-                end.getYear(), end.getMonthValue(), end.lengthOfMonth())));
-        return transactionDao.find(criteria).stream().collect(Collectors.groupingBy(
-                t -> YearMonth.from(t.getTime().toInstant().atZone(ZoneId.systemDefault()).toLocalDate()),
-                Collectors.groupingBy(t -> t.getInAccount().equals("YUMMY") ? "income" : "outcome",
-                        Collectors.summingDouble(Transaction::getAmount))
-        ));
+        List<String[]> rawData = transactionDao.getStatistics(start, end);
+        final String[] types = {"income", "outcome"};
+        int i = 0;
+        Map<YearMonth, Map<String, Double>> financialData = new HashMap<>();
+        for(YearMonth month = start; month.compareTo(end) <= 0; month = month.plusMonths(1)) {
+            Map<String, Double> monthlyData = new HashMap<>(2);
+            for (String type: types) {
+                String[] row;
+                if (i < rawData.size() && month.getYear() == Integer.parseInt((row = rawData.get(i))[0])
+                        && month.getMonthValue() == Integer.parseInt(row[1])
+                        && type.equals(row[2])) {
+                    monthlyData.put(type, Double.parseDouble(row[3]));
+                    i++;
+                } else {
+                    monthlyData.put(type, 0.0D);
+                }
+            }
+            financialData.put(month, monthlyData);
+        }
+        return financialData;
     }
 }

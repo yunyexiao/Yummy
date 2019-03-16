@@ -20,6 +20,7 @@
     ></v-text-field>
     <v-date-picker
       v-model="innerValue"
+      :type="type"
       @input="datePicked"
     ></v-date-picker>
   </v-menu>
@@ -33,7 +34,8 @@ export default {
     value: String,
     disabled: Boolean,
     rules: Array,
-    fullWidth: Boolean
+    fullWidth: Boolean,
+    type: String
   },
   data: function () {
     return {

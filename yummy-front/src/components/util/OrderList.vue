@@ -23,7 +23,7 @@
           <slot :order="order"></slot>
         </v-list-tile-action>
       </v-list-tile>
-      <v-divider :key="'s' + index"></v-divider>
+      <v-divider :key="'s' + index" v-if="index < orders.length - 1"></v-divider>
     </template>
   </v-list>
 </template>

@@ -6,7 +6,19 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="beda16b5-4a6a-42fa-985b-86942a60f06b" name="Default Changelist" comment="" />
+    <list default="true" id="beda16b5-4a6a-42fa-985b-86942a60f06b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/cirno.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/cirno.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yyx/dao/TransactionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yyx/dao/TransactionDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yyx/dao/impl/TransactionDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yyx/dao/impl/TransactionDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yyx/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yyx/service/impl/AdminServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy-front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/yummy-front/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy-front/src/components/admin/Statistics.vue" beforeDir="false" afterPath="$PROJECT_DIR$/yummy-front/src/components/admin/Statistics.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy-front/src/components/util/DatePicker.vue" beforeDir="false" afterPath="$PROJECT_DIR$/yummy-front/src/components/util/DatePicker.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy-front/src/components/util/OrderList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/yummy-front/src/components/util/OrderList.vue" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,14 +65,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/controller/AdminController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="97" selection-start-line="97" selection-end-line="97" />
+            <state relative-caret-position="408">
+              <caret line="99" selection-start-line="99" selection-end-line="99" />
               <folding>
-                <element signature="e#437#452#0" />
                 <element signature="docComment;method#signIn#0;class#AdminController#0" />
                 <element signature="method#signIn#0;class#AdminController#0" />
-                <element signature="e#946#1151#0" />
-                <element signature="e#1180#1241#0" />
                 <element signature="method#signOut#0;class#AdminController#0" />
                 <element signature="method#getUnsettledOrders#0;class#AdminController#0" />
                 <element signature="method#settleOrder#0;class#AdminController#0" />
@@ -73,11 +82,67 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/service/impl/AdminServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="179" selection-start-line="179" selection-end-line="179" />
+              <folding>
+                <element signature="e#696#704#0" />
+                <element signature="method#AdminServiceImpl#0;class#AdminServiceImpl#0" />
+                <element signature="e#1687#1696#0" />
+                <element signature="method#signIn#0;class#AdminServiceImpl#0" />
+                <element signature="e#1865#1931#1" />
+                <element signature="e#1943#1952#0" />
+                <element signature="method#getUnsettledOrders#0;class#AdminServiceImpl#0" />
+                <element signature="e#2336#2345#0" />
+                <element signature="method#settleOrder#0;class#AdminServiceImpl#0" />
+                <element signature="e#2481#3381#0" />
+                <element signature="e#2522#3126#1" />
+                <element signature="e#3166#3258#1" />
+                <element signature="e#3393#3402#0" />
+                <element signature="method#getInvalidRestaurants#0;class#AdminServiceImpl#0" />
+                <element signature="e#3594#3603#0" />
+                <element signature="method#getDraftedRestaurants#0;class#AdminServiceImpl#0" />
+                <element signature="e#3795#3804#0" />
+                <element signature="method#checkRestaurant#0;class#AdminServiceImpl#0" />
+                <element signature="e#3984#4140#1" />
+                <element signature="e#4011#4066#1" />
+                <element signature="e#4072#4130#1" />
+                <element signature="e#4146#4711#1" />
+                <element signature="e#4173#4662#1" />
+                <element signature="e#4723#4732#0" />
+                <element signature="method#getUncheckedRestaurant#0;class#AdminServiceImpl#0" />
+                <element signature="e#4957#5054#1" />
+                <element signature="e#5093#5102#0" />
+                <element signature="e#5223#5232#0" />
+                <element signature="e#5357#5366#0" />
+                <element signature="e#5535#5658#1" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/yummy-front/src/components/admin/Statistics.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1288">
-              <caret line="56" column="10" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
+            <state relative-caret-position="529">
+              <caret line="33" column="41" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
+              <folding>
+                <element signature="n#v-card#0;n#v-flex#1;n#v-layout#0;n#template#0;n#!!top" />
+                <element signature="e#333#339#0" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#p#0;n#v-layout#1;n#v-card-text#0;n#v-card#1;n#v-flex#1;n#v-layout#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#p#0;n#v-layout#1;n#v-card-text#0;n#v-card#1;n#v-flex#1;n#v-layout#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#v-card-text#0;n#v-card#0;n#v-flex#1;n#v-layout#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="e#948#991#0" expanded="true" />
+                <element signature="e#682#1532#0" />
+                <element signature="e#701#766#0" />
+                <element signature="e#780#1023#0" />
+                <element signature="e#820#864#0" />
+                <element signature="e#870#1015#0" />
+                <element signature="e#3068#3082#0" />
+                <element signature="e#2575#3801#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -123,13 +188,12 @@
       <dir>$PROJECT_DIR$/yummy-front/src/components/restaurant</dir>
     </dirStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/yummy-front/src/components/util/OrderInfo.vue" />
-        <option value="$PROJECT_DIR$/yummy-front/src/components/customer/InfoManage.vue" />
-        <option value="$PROJECT_DIR$/yummy-front/src/components/restaurant/Home.vue" />
-        <option value="$PROJECT_DIR$/yummy-front/src/components/restaurant/InputRules.js" />
         <option value="$PROJECT_DIR$/yummy-front/src/components/restaurant/SignUp.vue" />
         <option value="$PROJECT_DIR$/yummy-front/src/components/restaurant/InfoManage.vue" />
         <option value="$PROJECT_DIR$/yummy-front/src/components/restaurant/input-rules.js" />
@@ -142,7 +206,6 @@
         <option value="$PROJECT_DIR$/yummy-front/src/components/customer/Records.vue" />
         <option value="$PROJECT_DIR$/yummy-front/src/components/restaurant/Records.vue" />
         <option value="$PROJECT_DIR$/yummy-front/src/router/customer-routes.js" />
-        <option value="$PROJECT_DIR$/yummy-front/src/components/util/DatePicker.vue" />
         <option value="$PROJECT_DIR$/yummy-front/src/components/util/RecordView.vue" />
         <option value="$PROJECT_DIR$/yummy-front/src/components/restaurant/Header.vue" />
         <option value="$PROJECT_DIR$/yummy-front/src/router/restaurant-routes.js" />
@@ -160,7 +223,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/yyx/model/Address.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yyx/model/AddressInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yyx/model/RestaurantDraft.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yyx/service/impl/AdminServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yyx/service/impl/CustomerServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yyx/service/impl/RestaurantServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yyx/controller/CustomerController.java" />
@@ -176,7 +238,13 @@
         <option value="$PROJECT_DIR$/yummy-front/src/components/admin/Header.vue" />
         <option value="$PROJECT_DIR$/src/main/java/com/yyx/model/Customer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yyx/model/Restaurant.java" />
+        <option value="$PROJECT_DIR$/yummy-front/src/components/util/DatePicker.vue" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yyx/dao/TransactionDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yyx/model/Transaction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yyx/dao/impl/TransactionDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yyx/service/impl/AdminServiceImpl.java" />
         <option value="$PROJECT_DIR$/yummy-front/src/components/admin/Statistics.vue" />
+        <option value="$PROJECT_DIR$/yummy-front/src/components/util/OrderList.vue" />
       </list>
     </option>
   </component>
@@ -245,6 +313,41 @@
             <path>
               <item name="Yummy" type="b2602c69:ProjectViewProjectNode" />
               <item name="Yummy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Yummy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Yummy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Yummy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Yummy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Yummy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Yummy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Yummy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Yummy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="yyx" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Yummy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Yummy" type="462c0819:PsiDirectoryNode" />
               <item name="yummy-front" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -266,7 +369,7 @@
               <item name="yummy-front" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="customer" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Yummy" type="b2602c69:ProjectViewProjectNode" />
@@ -336,7 +439,7 @@
       </method>
     </configuration>
     <configuration name="Yummy" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat-9.0.14" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="UPDATING_POLICY" value="hot-swap-classes" />
+      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="Yummy:war">
           <settings>
@@ -346,7 +449,6 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_Yummy" />
-        <option name="HTTP_PORT" value="8081" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -447,11 +549,12 @@
       <workItem from="1550722496256" duration="52068000" />
       <workItem from="1550982658464" duration="21284000" />
       <workItem from="1551053121695" duration="46245000" />
+      <workItem from="1552723207517" duration="20403000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="475981000" />
+    <option name="totallyTimeSpent" value="496384000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -466,30 +569,30 @@
     <frame x="0" y="0" width="1366" height="749" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49920508" visible="true" weight="0.29604262" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49920508" weight="0.2952816" />
       <window_info id="Structure" order="1" sideWeight="0.5007949" side_tool="true" weight="0.24961948" />
       <window_info id="Web" order="2" side_tool="true" weight="0.32952815" />
       <window_info id="Persistence" order="3" sideWeight="0.5007949" side_tool="true" weight="0.24961948" />
       <window_info id="Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" weight="0.32952815" />
-      <window_info anchor="bottom" id="Database Console" weight="0.3290938" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.5755167" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4977169" weight="0.6025437" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4977169" weight="0.6016" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3418124" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3290938" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.328" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.3290938" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.3290938" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49923897" weight="0.31160572" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5022831" side_tool="true" weight="0.6025437" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49923897" weight="0.6416" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5022831" side_tool="true" weight="0.6016" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3290938" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.3290938" />
       <window_info anchor="bottom" id="Duplicate detector" order="14" weight="0.3290938" />
       <window_info anchor="bottom" id="Statistic" order="15" weight="0.49920508" />
       <window_info anchor="bottom" id="TypeScript" order="16" weight="0.3290938" />
+      <window_info anchor="bottom" id="Database Console" order="17" weight="0.3290938" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -533,215 +636,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/yummy-front/src/router/restaurant-routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yummy-front/src/components/restaurant/FinancialStats.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="30" column="15" lean-forward="true" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
-          <folding>
-            <element signature="n#v-flex#0;n#v-layout#1;n#v-flex#1;n#v-layout#0;n#template#0;n#!!top" />
-            <element signature="e#631#637#0" expanded="true" />
-            <element signature="e#637#643#0" expanded="true" />
-            <element signature="e#689#695#0" expanded="true" />
-            <element signature="e#695#701#0" expanded="true" />
-            <element signature="e#714#728#0" />
-            <element signature="e#2152#2166#0" />
-            <element signature="e#2375#2389#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yummy-front/src/components/restaurant/MealManage.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="110" column="14" selection-start-line="110" selection-start-column="14" selection-end-line="110" selection-end-column="14" />
-          <folding>
-            <element signature="n#v-btn#0;n#v-layout#0;n#v-flex#1;n#v-layout#0;n#template#0;n#!!top" />
-            <element signature="n#v-flex#0;n#v-layout#1;n#v-flex#1;n#v-layout#0;n#template#0;n#!!top" />
-            <element signature="e#1210#1216#0" expanded="true" />
-            <element signature="n#v-card-actions#0;n#v-card#0;n#v-dialog#0;n#v-layout#0;n#template#0;n#!!top" />
-            <element signature="n#v-snackbar#0;n#v-layout#0;n#template#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yummy-front/src/components/restaurant/PromotionManage.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="70" column="14" selection-start-line="70" selection-start-column="14" selection-end-line="70" selection-end-column="14" />
-          <folding>
-            <element signature="n#v-layout#0;n#v-flex#1;n#v-layout#0;n#template#0;n#!!top" />
-            <element signature="n#v-layout#1;n#v-flex#1;n#v-layout#0;n#template#0;n#!!top" />
-            <element signature="e#631#637#0" expanded="true" />
-            <element signature="e#637#643#0" expanded="true" />
-            <element signature="e#684#690#0" expanded="true" />
-            <element signature="e#690#696#0" expanded="true" />
-            <element signature="n#v-card-actions#0;n#v-card#0;n#v-dialog#0;n#v-layout#0;n#template#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yummy-front/src/components/util/NumField.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yummy-front/src/components/customer/PaymentManage.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="132" column="6" selection-start-line="132" selection-start-column="6" selection-end-line="132" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yummy-front/src/components/customer/Header.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yummy-front/src/components/customer/Home.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yummy-front/src/components/restaurant/Home.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yummy-front/src/router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-            <element signature="e#269#339#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yummy-front/src/router/customer-routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yummy-front/src/components/admin/Home.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yummy-front/src/components/util/OrderList.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yummy-front/src/components/customer/Records.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yummy-front/src/components/util/RecordView.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-833">
-          <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
-          <folding>
-            <element signature="n#v-layout#0;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#v-layout#1;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#v-layout#2;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#v-layout#3;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#v-dialog#0;n#div#0;n#template#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yummy-front/src/components/restaurant/UnhandledOrders.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="39" column="54" selection-start-line="39" selection-start-column="54" selection-end-line="39" selection-end-column="54" />
-          <folding>
-            <element signature="n#v-dialog#0;n#v-layout#0;n#template#0;n#!!top" />
-            <element signature="e#2137#2934#0" />
-            <element signature="e#2966#3069#0" />
-            <element signature="e#3182#3254#0" />
-            <element signature="e#3290#3561#0" />
-            <element signature="e#3598#3870#0" />
-            <element signature="e#3904#4084#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yummy-front/src/components/customer/UnhandledOrders.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-          <folding>
-            <element signature="n#v-layout#0;n#v-flex#1;n#v-layout#0;n#template#0;n#!!top" />
-            <element signature="n#v-toolbar#0;n#v-layout#0;n#v-flex#1;n#v-layout#0;n#template#0;n#!!top" />
-            <element signature="n#v-select#0;n#v-toolbar#0;n#v-layout#0;n#v-flex#1;n#v-layout#0;n#template#0;n#!!top" />
-            <element signature="n#v-btn#1;n#template#0;n#OrderList#0;n#v-flex#0;n#v-layout#1;n#v-flex#1;n#v-layout#0;n#template#0;n#!!top" />
-            <element signature="n#v-card-actions#0;n#v-card#0;n#v-dialog#0;n#v-layout#0;n#template#0;n#!!top" />
-            <element signature="n#v-btn#1;n#v-card-actions#0;n#v-card#0;n#v-dialog#0;n#v-layout#0;n#template#0;n#!!top" />
-            <element signature="n#v-dialog#1;n#v-layout#0;n#template#0;n#!!top" />
-            <element signature="n#v-card#0;n#v-dialog#1;n#v-layout#0;n#template#0;n#!!top" />
-            <element signature="n#v-card-text#0;n#v-card#0;n#v-dialog#1;n#v-layout#0;n#template#0;n#!!top" />
-            <element signature="n#v-select#0;n#v-card-text#0;n#v-card#0;n#v-dialog#1;n#v-layout#0;n#template#0;n#!!top" />
-            <element signature="n#v-text-field#0;n#v-card-text#0;n#v-card#0;n#v-dialog#1;n#v-layout#0;n#template#0;n#!!top" />
-            <element signature="n#v-card-actions#0;n#v-card#0;n#v-dialog#1;n#v-layout#0;n#template#0;n#!!top" />
-            <element signature="e#3109#3632#0" />
-            <element signature="n#style#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yummy-front/src/components/customer/AccountCancel.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-324" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yummy-front/src/components/admin/OrderSettle.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="626">
-          <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://08127605-ed0e-4d05-91c6-6908c9faa3dc/schema/yummy/table/meal">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/model/AddressInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/util/DistanceUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -760,13 +654,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="458">
           <caret line="46" column="14" lean-forward="true" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/model/AddressInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -867,13 +754,6 @@
     <entry file="file://$PROJECT_DIR$/yummy-front/src/components/restaurant/InfoManage.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1380" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/model/RestaurantDraft.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/controller/RestaurantController.java">
@@ -992,24 +872,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/service/AdminService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/service/impl/AdminServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="142" column="31" selection-start-line="142" selection-start-column="31" selection-end-line="142" selection-end-column="31" />
-          <folding>
-            <element signature="e#5174#5175#0" expanded="true" />
-            <element signature="e#5216#5217#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/dao/CustomerDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
@@ -1021,41 +883,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="370">
           <caret line="51" column="70" lean-forward="true" selection-start-line="51" selection-start-column="70" selection-end-line="51" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/model/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/model/Restaurant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="17" column="69" selection-start-line="17" selection-start-column="69" selection-end-line="17" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/controller/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="97" selection-start-line="97" selection-end-line="97" />
-          <folding>
-            <element signature="e#437#452#0" />
-            <element signature="docComment;method#signIn#0;class#AdminController#0" />
-            <element signature="method#signIn#0;class#AdminController#0" />
-            <element signature="e#946#1151#0" />
-            <element signature="e#1180#1241#0" />
-            <element signature="method#signOut#0;class#AdminController#0" />
-            <element signature="method#getUnsettledOrders#0;class#AdminController#0" />
-            <element signature="method#settleOrder#0;class#AdminController#0" />
-            <element signature="method#getDraftedRestaurants#0;class#AdminController#0" />
-            <element signature="method#getInvalidRestaurants#0;class#AdminController#0" />
-            <element signature="method#getRestaurantInfo#0;class#AdminController#0" />
-            <element signature="method#checkRestaurant#0;class#AdminController#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1071,10 +898,471 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/service/impl/task/DeliveryConfirmationTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/service/impl/task/OrderCancellationTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/service/impl/OrderCancellation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/service/impl/task/OrderScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yummy-front/src/components/restaurant/MealManage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/service/AdminService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="44" column="40" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/controller/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="99" selection-start-line="99" selection-end-line="99" />
+          <folding>
+            <element signature="docComment;method#signIn#0;class#AdminController#0" />
+            <element signature="method#signIn#0;class#AdminController#0" />
+            <element signature="method#signOut#0;class#AdminController#0" />
+            <element signature="method#getUnsettledOrders#0;class#AdminController#0" />
+            <element signature="method#settleOrder#0;class#AdminController#0" />
+            <element signature="method#getDraftedRestaurants#0;class#AdminController#0" />
+            <element signature="method#getInvalidRestaurants#0;class#AdminController#0" />
+            <element signature="method#getRestaurantInfo#0;class#AdminController#0" />
+            <element signature="method#checkRestaurant#0;class#AdminController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/model/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/model/OrderItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/model/RestaurantDraft.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/model/Restaurant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="17" column="69" selection-start-line="17" selection-start-column="69" selection-end-line="17" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/model/AddressInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/model/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/model/Meal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/model/Transaction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.4.0.Final/hibernate-core-5.4.0.Final-sources.jar!/org/hibernate/query/NativeQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.4.0.Final/hibernate-core-5.4.0.Final-sources.jar!/org/hibernate/Session.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6486">
+          <caret line="1184" column="50" selection-start-line="1184" selection-start-column="50" selection-end-line="1184" selection-end-column="50" />
+          <folding>
+            <element signature="docComment;class#Session#0" />
+            <element signature="e#3748#3893#0" />
+            <element signature="e#3940#4436#0" />
+            <element signature="e#4480#5078#0" />
+            <element signature="e#5135#5583#0" />
+            <element signature="e#5628#6140#0" />
+            <element signature="e#6193#6281#0" />
+            <element signature="e#6320#6511#0" />
+            <element signature="e#6555#6635#0" />
+            <element signature="e#6665#6790#0" />
+            <element signature="e#6830#7060#0" />
+            <element signature="e#7110#7442#0" />
+            <element signature="e#7491#7889#0" />
+            <element signature="e#7922#8925#0" />
+            <element signature="e#8972#9360#0" />
+            <element signature="e#9407#9739#0" />
+            <element signature="e#9795#10238#0" />
+            <element signature="e#10269#10775#0" />
+            <element signature="e#10846#11227#0" />
+            <element signature="e#11304#11814#0" />
+            <element signature="e#11886#12273#0" />
+            <element signature="e#12351#13009#0" />
+            <element signature="e#13061#13721#0" />
+            <element signature="e#13774#14035#0" />
+            <element signature="e#14082#14420#0" />
+            <element signature="e#14488#14864#0" />
+            <element signature="e#14952#15372#0" />
+            <element signature="e#15410#15869#0" />
+            <element signature="e#15926#16434#0" />
+            <element signature="e#16472#17031#0" />
+            <element signature="e#17088#17458#0" />
+            <element signature="e#17490#17898#0" />
+            <element signature="e#17949#18642#0" />
+            <element signature="e#18675#19406#0" />
+            <element signature="e#19458#19751#0" />
+            <element signature="e#19783#20114#0" />
+            <element signature="e#20166#20564#0" />
+            <element signature="e#20596#21078#0" />
+            <element signature="e#21129#21826#0" />
+            <element signature="e#21875#22639#0" />
+            <element signature="e#22707#23224#0" />
+            <element signature="e#23283#23837#0" />
+            <element signature="e#23870#24465#0" />
+            <element signature="e#24517#25017#0" />
+            <element signature="e#25069#25468#0" />
+            <element signature="e#25526#25966#0" />
+            <element signature="e#26043#26190#0" />
+            <element signature="e#26238#26786#0" />
+            <element signature="e#26876#27078#0" />
+            <element signature="e#27096#27498#0" />
+            <element signature="e#27551#28177#0" />
+            <element signature="e#28249#28747#0" />
+            <element signature="e#28825#29227#0" />
+            <element signature="e#29279#29907#0" />
+            <element signature="e#29978#30485#0" />
+            <element signature="e#30562#30699#0" />
+            <element signature="e#30741#31121#0" />
+            <element signature="e#31171#31558#0" />
+            <element signature="e#31632#32042#0" />
+            <element signature="e#32106#32457#0" />
+            <element signature="e#32517#32892#0" />
+            <element signature="e#32948#33300#0" />
+            <element signature="e#33366#33854#0" />
+            <element signature="e#33922#34418#0" />
+            <element signature="e#34496#34691#0" />
+            <element signature="e#34735#34927#0" />
+            <element signature="e#34975#35102#0" />
+            <element signature="e#35146#35267#0" />
+            <element signature="e#35306#35708#0" />
+            <element signature="e#35754#36646#0" />
+            <element signature="e#36708#36960#0" />
+            <element signature="e#37014#37485#0" />
+            <element signature="e#37752#37761#0" />
+            <element signature="e#37752#37972#0" />
+            <element signature="e#37975#38619#0" />
+            <element signature="e#38648#38772#0" />
+            <element signature="e#38815#39196#0" />
+            <element signature="e#39275#39650#0" />
+            <element signature="e#39723#40101#0" />
+            <element signature="e#40175#40497#0" />
+            <element signature="e#40529#40651#0" />
+            <element signature="e#40681#40749#0" />
+            <element signature="e#40681#42939#0" />
+            <element signature="e#40777#40912#0" />
+            <element signature="e#40946#41103#0" />
+            <element signature="e#41144#41210#0" />
+            <element signature="e#41240#41450#0" />
+            <element signature="e#41500#41624#0" />
+            <element signature="e#41648#42000#0" />
+            <element signature="e#42043#42217#0" />
+            <element signature="e#42243#42552#0" />
+            <element signature="e#42595#42753#0" />
+            <element signature="e#42804#42908#0" />
+            <element signature="e#42942#43043#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2-sources.jar!/javax/persistence/Query.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="486" column="30" selection-start-line="486" selection-start-column="30" selection-end-line="486" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/dao/TransactionDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk/src.zip!/java/time/temporal/TemporalQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="102" column="17" selection-start-line="102" selection-start-column="17" selection-end-line="102" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk/src.zip!/java/time/YearMonth.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3772">
+          <caret line="961" lean-forward="true" selection-start-line="961" selection-end-line="961" />
+          <folding>
+            <element signature="docComment;class#YearMonth#0" />
+            <element signature="e#6135#6176#0" />
+            <element signature="e#6252#6278#0" />
+            <element signature="e#6515#6543#0" />
+            <element signature="e#6576#6623#0" />
+            <element signature="e#6736#7223#0" />
+            <element signature="e#7318#7873#0" />
+            <element signature="e#7972#8400#0" />
+            <element signature="e#7972#8581#0" />
+            <element signature="e#8665#8987#0" />
+            <element signature="e#8665#9140#0" />
+            <element signature="e#9146#9497#0" />
+            <element signature="e#9146#9682#0" />
+            <element signature="e#9766#10749#0" />
+            <element signature="e#9766#11432#0" />
+            <element signature="e#10855#10907#1" />
+            <element signature="e#10974#11209#0" />
+            <element signature="e#11059#11127#1" />
+            <element signature="e#11239#11426#0" />
+            <element signature="e#11516#12003#0" />
+            <element signature="e#12106#12519#0" />
+            <element signature="e#12106#12720#0" />
+            <element signature="e#12804#13018#0" />
+            <element signature="e#12804#13123#0" />
+            <element signature="e#13129#13474#0" />
+            <element signature="e#13129#13672#0" />
+            <element signature="e#13581#13617#1" />
+            <element signature="e#13756#14892#0" />
+            <element signature="e#13756#15227#0" />
+            <element signature="e#15003#15162#1" />
+            <element signature="e#15233#16335#0" />
+            <element signature="e#15233#16645#0" />
+            <element signature="e#16442#16582#1" />
+            <element signature="e#16729#18010#0" />
+            <element signature="e#16729#18282#0" />
+            <element signature="e#18110#18232#1" />
+            <element signature="e#18288#19906#0" />
+            <element signature="e#20070#21338#0" />
+            <element signature="e#20070#21919#0" />
+            <element signature="e#21442#21877#1" />
+            <element signature="e#21485#21780#0" />
+            <element signature="e#22090#22361#0" />
+            <element signature="e#22421#22759#0" />
+            <element signature="e#22826#23254#0" />
+            <element signature="e#23406#24277#0" />
+            <element signature="e#24379#24728#0" />
+            <element signature="e#25152#25153#0" expanded="true" />
+            <element signature="e#25206#25207#0" expanded="true" />
+            <element signature="e#25213#25406#0" />
+            <element signature="e#25571#26691#0" />
+            <element signature="e#26826#29243#0" />
+            <element signature="e#26826#30049#0" />
+            <element signature="e#29364#29994#1" />
+            <element signature="e#29479#29897#0" />
+            <element signature="e#30133#30549#0" />
+            <element signature="e#30133#30667#0" />
+            <element signature="e#30673#31126#0" />
+            <element signature="e#30673#31256#0" />
+            <element signature="e#31340#32421#0" />
+            <element signature="e#32555#35277#0" />
+            <element signature="e#32555#36069#0" />
+            <element signature="e#35397#36017#1" />
+            <element signature="e#35438#35922#0" />
+            <element signature="e#36075#36490#0" />
+            <element signature="e#36075#36733#0" />
+            <element signature="e#36570#36606#1" />
+            <element signature="e#36739#37158#0" />
+            <element signature="e#36739#37586#0" />
+            <element signature="e#37241#37277#1" />
+            <element signature="e#37670#38793#0" />
+            <element signature="e#38945#40063#0" />
+            <element signature="e#38945#40282#0" />
+            <element signature="e#40288#40723#0" />
+            <element signature="e#40288#40908#0" />
+            <element signature="e#40914#41353#0" />
+            <element signature="e#40914#41545#0" />
+            <element signature="e#41629#42523#0" />
+            <element signature="e#42528#42558#0" />
+            <element signature="e#41629#42871#0" />
+            <element signature="e#42673#42731#1" />
+            <element signature="e#42779#42821#1" />
+            <element signature="e#42877#44082#0" />
+            <element signature="e#42877#44400#0" />
+            <element signature="e#44228#44326#1" />
+            <element signature="e#44406#46977#0" />
+            <element signature="e#44406#47787#0" />
+            <element signature="e#47152#47741#1" />
+            <element signature="e#47287#47646#0" />
+            <element signature="e#47793#48141#0" />
+            <element signature="e#47793#48298#0" />
+            <element signature="e#48382#49084#0" />
+            <element signature="e#49195#49688#0" />
+            <element signature="e#49875#50268#0" />
+            <element signature="e#49875#50466#0" />
+            <element signature="e#50388#50440#1" />
+            <element signature="e#50472#50686#0" />
+            <element signature="e#50781#51003#0" />
+            <element signature="e#51177#51468#0" />
+            <element signature="e#51177#51772#0" />
+            <element signature="e#51548#51584#1" />
+            <element signature="e#51623#51744#1" />
+            <element signature="e#51778#51872#0" />
+            <element signature="e#52041#52272#0" />
+            <element signature="e#52041#52780#0" />
+            <element signature="e#52434#52624#1" />
+            <element signature="e#52462#52535#1" />
+            <element signature="e#52541#52614#1" />
+            <element signature="e#52630#52671#1" />
+            <element signature="e#52864#53215#0" />
+            <element signature="e#53314#53453#0" />
+            <element signature="e#53314#53628#0" />
+            <element signature="e#53634#53753#0" />
+            <element signature="e#53759#53940#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/dao/impl/TransactionDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/service/impl/AdminServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="179" selection-start-line="179" selection-end-line="179" />
+          <folding>
+            <element signature="e#696#704#0" />
+            <element signature="method#AdminServiceImpl#0;class#AdminServiceImpl#0" />
+            <element signature="e#1687#1696#0" />
+            <element signature="method#signIn#0;class#AdminServiceImpl#0" />
+            <element signature="e#1865#1931#1" />
+            <element signature="e#1943#1952#0" />
+            <element signature="method#getUnsettledOrders#0;class#AdminServiceImpl#0" />
+            <element signature="e#2336#2345#0" />
+            <element signature="method#settleOrder#0;class#AdminServiceImpl#0" />
+            <element signature="e#2481#3381#0" />
+            <element signature="e#2522#3126#1" />
+            <element signature="e#3166#3258#1" />
+            <element signature="e#3393#3402#0" />
+            <element signature="method#getInvalidRestaurants#0;class#AdminServiceImpl#0" />
+            <element signature="e#3594#3603#0" />
+            <element signature="method#getDraftedRestaurants#0;class#AdminServiceImpl#0" />
+            <element signature="e#3795#3804#0" />
+            <element signature="method#checkRestaurant#0;class#AdminServiceImpl#0" />
+            <element signature="e#3984#4140#1" />
+            <element signature="e#4011#4066#1" />
+            <element signature="e#4072#4130#1" />
+            <element signature="e#4146#4711#1" />
+            <element signature="e#4173#4662#1" />
+            <element signature="e#4723#4732#0" />
+            <element signature="method#getUncheckedRestaurant#0;class#AdminServiceImpl#0" />
+            <element signature="e#4957#5054#1" />
+            <element signature="e#5093#5102#0" />
+            <element signature="e#5223#5232#0" />
+            <element signature="e#5357#5366#0" />
+            <element signature="e#5535#5658#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yummy-front/src/components/util/DatePicker.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yummy-front/src/components/admin/OrderSettle.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="851">
+          <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yummy-front/src/components/restaurant/Records.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yummy-front/src/components/restaurant/PromotionManage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-230">
+          <caret line="38" column="17" lean-forward="true" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yummy-front/src/components/util/OrderList.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="25" column="66" selection-start-line="25" selection-start-column="66" selection-end-line="25" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/yummy-front/src/components/admin/Statistics.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1288">
-          <caret line="56" column="10" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
+        <state relative-caret-position="529">
+          <caret line="33" column="41" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
+          <folding>
+            <element signature="n#v-card#0;n#v-flex#1;n#v-layout#0;n#template#0;n#!!top" />
+            <element signature="e#333#339#0" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#v-layout#1;n#v-card-text#0;n#v-card#1;n#v-flex#1;n#v-layout#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#p#0;n#v-layout#1;n#v-card-text#0;n#v-card#1;n#v-flex#1;n#v-layout#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#v-card-text#0;n#v-card#0;n#v-flex#1;n#v-layout#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="e#948#991#0" expanded="true" />
+            <element signature="e#682#1532#0" />
+            <element signature="e#701#766#0" />
+            <element signature="e#780#1023#0" />
+            <element signature="e#820#864#0" />
+            <element signature="e#870#1015#0" />
+            <element signature="e#3068#3082#0" />
+            <element signature="e#2575#3801#0" />
+          </folding>
         </state>
       </provider>
     </entry>

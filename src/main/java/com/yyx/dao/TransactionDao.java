@@ -5,6 +5,7 @@ import com.yyx.model.criteria.TransactionCriteria;
 import lombok.NonNull;
 
 import javax.persistence.NoResultException;
+import java.time.YearMonth;
 import java.util.List;
 
 public interface TransactionDao {
@@ -16,4 +17,6 @@ public interface TransactionDao {
     @NonNull Transaction findPayment(long oid);
 
     @NonNull List<Transaction> find(@NonNull TransactionCriteria criteria);
+
+    List<String[]> getStatistics(@NonNull YearMonth start, @NonNull YearMonth end);
 }
