@@ -23,4 +23,22 @@ public class RestaurantDraft implements Serializable {
     private double latitude;
     private double longitude;
     private String phone;
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null)
+            throw new NullPointerException();
+        if (o == this)
+            return true;
+        if (o instanceof RestaurantDraft) {
+            RestaurantDraft draft = (RestaurantDraft) o;
+            return draft.restaurant.equals(restaurant);
+        }
+        return false;
+    }
+
+    @Override
+    public int hashCode() {
+        return 31 + restaurant.hashCode();
+    }
 }

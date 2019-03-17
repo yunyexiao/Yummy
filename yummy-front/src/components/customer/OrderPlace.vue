@@ -19,7 +19,7 @@
         </v-card-actions>
       </v-card>
     </v-dialog>
-    <v-snackbar v-model="snackbar.show">
+    <v-snackbar v-model="snackbar.show" top>
       {{snackbar.msg}}
       <v-btn color="pink" flat @click="snackbar.show = false">关闭</v-btn>
     </v-snackbar>
