@@ -21,7 +21,8 @@ import java.util.List;
                 "cos(latitude * " + Math.PI + " / 180) * cos(:latitude * " + Math.PI + " / 180) * " +
                 "cos((longitude - :longitude) * " + Math.PI + " / 180) + " +
                 "sin(latitude * " + Math.PI + " / 180) * sin(:latitude * " + Math.PI + " / 180))) <= :distance " +
-                "and valid = 1 ")
+                "and valid = 1 "),
+        @NamedQuery(name = "Restaurant.getByName", query = "from Restaurant where name like :name")
 })
 public class Restaurant implements Serializable {
     @Id

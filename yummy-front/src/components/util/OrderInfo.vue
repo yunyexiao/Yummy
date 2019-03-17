@@ -107,7 +107,6 @@ export default {
   computed: {
     validOrder: function () {
       if (this.order) {
-        console.log('order')
         return this.order
       } else {
         return this.innerOrder

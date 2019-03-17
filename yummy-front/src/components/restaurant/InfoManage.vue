@@ -6,23 +6,23 @@
         <h2>餐馆信息管理</h2>
       </v-layout>
       <v-layout justify-space-around>
-        <h4>编号：{{restaurant.id}}</h4>
-        <h4>状态：{{restaurant.valid ? '已上线' : '未上线'}}</h4>
-        <h4>余额：{{restaurant.balance}}</h4>
+        <h4>编号：{{generalInfo.id}}</h4>
+        <h4>状态：{{generalInfo.valid ? '已上线' : '未上线'}}</h4>
+        <h4>余额：{{generalInfo.balance}}</h4>
       </v-layout>
       <v-layout>
         <v-expansion-panel expand v-model="expansion">
           <v-expansion-panel-content>
             <h3 slot="header">已过审信息</h3>
             <v-card>
-              <v-card-text v-if="validInfo.exist">
-                <p>餐馆名：{{validInfo.name}}</p>
-                <p>餐馆简介：{{validInfo.description}}</p>
-                <p>餐馆类型：{{validInfo.type}}</p>
-                <p>地址：{{validInfo.address}}</p>
-                <p>纬度：{{validInfo.latitude}}</p>
-                <p>经度：{{validInfo.longitude}}</p>
-                <p>客服电话：{{validInfo.phone}}</p>
+              <v-card-text v-if="publicInfo.exist">
+                <p>餐馆名：{{publicInfo.name}}</p>
+                <p>餐馆简介：{{publicInfo.description}}</p>
+                <p>餐馆类型：{{publicInfo.type}}</p>
+                <p>地址：{{publicInfo.address}}</p>
+                <p>纬度：{{publicInfo.latitude}}</p>
+                <p>经度：{{publicInfo.longitude}}</p>
+                <p>客服电话：{{publicInfo.phone}}</p>
               </v-card-text>
               <v-card-text v-else>
                 <h4>无已过审信息</h4>
@@ -33,64 +33,64 @@
             <h3 slot="header">待审核信息</h3>
             <v-card>
               <v-card-text>
-                <v-form v-show="invalidInfo.exist || additionMode" ref="infoForm">
+                <v-form v-show="draft.exist || additionMode" ref="infoForm">
                   <v-text-field
                     label="餐馆名"
-                    v-model="invalidInfo.name"
+                    v-model="draft.name"
                     :counter="40"
                     :rules="rules.nameRules"
                     :disabled="!editable"
                   ></v-text-field>
                   <v-textarea
                     label="餐馆简介"
-                    v-model="invalidInfo.description"
+                    v-model="draft.description"
                     :counter="100"
                     :rules="rules.descriptionRules"
                     :disabled="!editable"
                   ></v-textarea>
                   <v-text-field
                     label="餐馆类型"
-                    v-model="invalidInfo.type"
+                    v-model="draft.type"
                     :counter="20"
                     :rules="rules.typeRules"
                     :disabled="!editable"
                   ></v-text-field>
                   <v-text-field
                     label="地址"
-                    v-model="invalidInfo.address"
+                    v-model="draft.address"
                     :counter="50"
                     :rules="rules.addressRules"
                     :disabled="!editable"
                   ></v-text-field>
                   <v-text-field
                     label="纬度"
-                    v-model="invalidInfo.latitude"
+                    v-model="draft.latitude"
                     type="number"
                     :rules="rules.latitudeRules"
                     :disabled="!editable"
                   ></v-text-field>
                   <v-text-field
                     label="经度"
-                    v-model="invalidInfo.longitude"
+                    v-model="draft.longitude"
                     type="number"
                     :rules="rules.longitudeRules"
                     :disabled="!editable"
                   ></v-text-field>
                   <v-text-field
                     label="客服电话"
-                    v-model="invalidInfo.phone"
+                    v-model="draft.phone"
                     :counter="11"
                     :rules="rules.phoneRules"
                     :disabled="!editable"
                   ></v-text-field>
                 </v-form>
-                <h4 v-show="!invalidInfo.exist && !additionMode">无待审核信息</h4>
+                <h4 v-show="!draft.exist && !additionMode">无待审核信息</h4>
               </v-card-text>
               <v-card-actions>
-                <v-btn v-show="invalidInfo.exist" color="primary" @click="editable = !editable">
+                <v-btn v-show="draft.exist" color="primary" @click="editable = !editable">
                   {{editable ? '取消' : '修改'}}
                 </v-btn>
-                <v-btn v-show="!invalidInfo.exist" color="primary" @click="switchMode">
+                <v-btn v-show="!draft.exist" color="primary" @click="switchMode">
                   {{additionMode ? '取消' : '新增'}}
                 </v-btn>
                 <v-btn v-show="editable" color="success" @click="updateInfo">
@@ -116,21 +116,23 @@ export default {
   name: 'InfoManage',
   beforeMount: function () {
     this.loadInfo()
-    this.loadDraft()
   },
   data: function () {
     return {
-      restaurant: {
+      generalInfo: {
         id: '',
+        valid: 0,
+        balance: 0
+      },
+      publicInfo: {
+        exist: false,
         name: '',
         description: '',
         type: '',
         address: '',
         latitude: 0,
         longitude: 0,
-        phone: '',
-        balance: 0,
-        valid: 0
+        phone: ''
       },
       draft: {
         exist: false,
@@ -152,30 +154,6 @@ export default {
       expansion: [true, false]
     }
   },
-  computed: {
-    validInfo: function () {
-      if (this.restaurant.valid) {
-        return {
-          exist: true,
-          ...this.restaurant
-        }
-      } else {
-        return {
-          exist: false
-        }
-      }
-    },
-    invalidInfo: function () {
-      if (this.restaurant.valid) {
-        return this.draft
-      } else {
-        return {
-          exist: true,
-          ...this.restaurant
-        }
-      }
-    }
-  },
   methods: {
     loadInfo: function () {
       this.$ajax({
@@ -185,16 +163,32 @@ export default {
         if (res.data['AccessDenied']) {
           this.$router.push('/')
         } else {
-          this.restaurant.id = res.data.id
-          this.restaurant.name = res.data.name
-          this.restaurant.description = res.data.description
-          this.restaurant.type = res.data.type
-          this.restaurant.address = res.data.address
-          this.restaurant.latitude = res.data.latitude
-          this.restaurant.longitude = res.data.longitude
-          this.restaurant.phone = res.data.phone
-          this.restaurant.balance = res.data.balance
-          this.restaurant.valid = res.data.valid
+          // load general info
+          this.generalInfo.id = res.data.id
+          this.generalInfo.balance = res.data.balance
+          this.generalInfo.valid = res.data.valid
+          // load other info
+          if (res.data.valid === 0) {
+            this.publicInfo.exist = false
+            this.draft.exist = true
+            this.draft.name = res.data.name
+            this.draft.description = res.data.description
+            this.draft.type = res.data.type
+            this.draft.address = res.data.address
+            this.draft.latitude = res.data.latitude
+            this.draft.longitude = res.data.longitude
+            this.draft.phone = res.data.phone
+          } else {
+            this.publicInfo.exist = true
+            this.publicInfo.name = res.data.name
+            this.publicInfo.description = res.data.description
+            this.publicInfo.type = res.data.type
+            this.publicInfo.address = res.data.address
+            this.publicInfo.latitude = res.data.latitude
+            this.publicInfo.longitude = res.data.longitude
+            this.publicInfo.phone = res.data.phone
+            this.loadDraft()
+          }
         }
       })
     },
@@ -243,21 +237,21 @@ export default {
             } else {
               this.snackbar.msg = '提交成功，等待经理审核'
               this.snackbar.show = true
+              this.editable = !this.editable
               this.loadInfo()
-              this.loadDraft()
             }
           })
         }
       }
     },
     draftSameWithInfo: function () {
-      return this.draft.name === this.restaurant.name &&
-        this.draft.type === this.restaurant.type &&
-        this.draft.description === this.restaurant.description &&
-        this.draft.address === this.restaurant.address &&
-        this.draft.latitude === this.restaurant.latitude &&
-        this.draft.longitude === this.restaurant.longitude &&
-        this.draft.phone === this.restaurant.phone
+      return this.draft.name === this.publicInfo.name &&
+        this.draft.type === this.publicInfo.type &&
+        this.draft.description === this.publicInfo.description &&
+        this.draft.address === this.publicInfo.address &&
+        this.draft.latitude === this.publicInfo.latitude &&
+        this.draft.longitude === this.publicInfo.longitude &&
+        this.draft.phone === this.publicInfo.phone
     }
   }
 }

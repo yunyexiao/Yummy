@@ -81,6 +81,7 @@
             <mvc:exclude-mapping path="/api/restaurant/sign-up"/>
             <mvc:exclude-mapping path="/api/restaurant/sign-in"/>
             <mvc:exclude-mapping path="/api/restaurant/get/**"/>
+            <mvc:exclude-mapping path="/api/restaurant/search"/>
             <bean id="restaurantIdInterceptor" class="com.yyx.interceptor.RestaurantIdInterceptor"/>
         </mvc:interceptor>
         <mvc:interceptor>

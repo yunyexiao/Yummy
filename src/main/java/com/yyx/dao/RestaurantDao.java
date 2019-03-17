@@ -19,6 +19,8 @@ public interface RestaurantDao {
      */
     @NonNull Restaurant find(@NonNull String id);
 
+    List<Restaurant> findByName(@NonNull String name, int pageStart, int pageCount);
+
     /**
      * Find restaurants by distance off the given address. All result restaurants are valid.
      */

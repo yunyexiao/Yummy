@@ -21,6 +21,8 @@ public interface RestaurantService {
      */
     void signIn(String id, String pwd);
 
+    List<Restaurant> searchByName(String name, int pageStart, int pageSize);
+
     /**
      * @param info no need for restaurant attribute
      */

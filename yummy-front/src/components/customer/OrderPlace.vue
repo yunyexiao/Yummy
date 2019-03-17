@@ -5,6 +5,9 @@
       <v-layout>
         <OrderInfo :order="orderInfo"></OrderInfo>
       </v-layout>
+      <v-layout>
+        <p>现在下单，预计{{waitTime}}分钟后送达。</p>
+      </v-layout>
       <v-layout justify-end>
         <v-btn color="success" lg @click="placeOrder">立即下单</v-btn>
       </v-layout>
@@ -47,6 +50,19 @@ export default {
       }
     })
     this.loadInfo()
+    this.$ajax({
+      url: '/customer/order/estimate-time',
+      method: 'get',
+      params: {
+        'rid': this.orderInfo.restaurant.id
+      }
+    }).then(res => {
+      if (res.data['AccessDenied']) {
+        this.$router.push('/')
+      } else {
+        this.waitTime = res.data['time']
+      }
+    })
   },
   data: function () {
     return {
@@ -65,6 +81,7 @@ export default {
         items: [],
         cost: 0
       },
+      waitTime: 0,
       dialog: false,
       snackbar: {
         show: false,
@@ -84,7 +101,6 @@ export default {
         this.orderInfo.items.push(item)
       }
       this.orderInfo.cost = info.cost
-      window.localStorage.removeItem('orderInfo')
     },
     placeOrder: function () {
       let items = {}

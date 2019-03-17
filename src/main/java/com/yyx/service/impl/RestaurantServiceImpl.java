@@ -64,6 +64,11 @@ public class RestaurantServiceImpl implements RestaurantService {
         }
     }
 
+    @Override @Transactional(readOnly = true)
+    public List<Restaurant> searchByName(String name, int pageStart, int pageSize) {
+        return restaurantDao.findByName(name, pageStart, pageSize);
+    }
+
     @Override @Transactional
     public void modifyInfo(String id, RestaurantDraft info) {
         Restaurant restaurant = restaurantDao.find(id);

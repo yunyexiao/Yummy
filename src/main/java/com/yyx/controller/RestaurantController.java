@@ -35,6 +35,13 @@ public class RestaurantController {
         return service.getPublicInfo(id);
     }
 
+    @GetMapping("/search")
+    public Object searchByName(@RequestParam("name") String name,
+                               @RequestParam("pageStart") int pageStart,
+                               @RequestParam("pageSize") int pageSize) {
+        return ModelShower.convertRestaurants(service.searchByName(name, pageStart, pageSize));
+    }
+
     @PostMapping("/sign-up")
     public Object signUp(@RequestBody JSONObject infoJson) {
         String id = service.signUp(toDraft(infoJson), infoJson.getString("pwd"));

@@ -173,7 +173,7 @@ public class CustomerServiceImpl implements CustomerService {
     private void sendCheckEmail(EmailKey emailKey) {
         String toId = emailKey.getCustomer().getEmail();
         String subject = "Please Check Your Account";
-        String url = "http://localhost:8080/Yummy/customer/verify-email?email=" +
+        String url = "http://localhost:8080/#/customer/verify-email?email=" +
                 toId + "&key=" + emailKey.getKey();
         String body = "Your email was used to sign up an account at our yummy platform. Please validate this " +
                 "account by clicking the link below: \n" + url + "\nHave a good day.";

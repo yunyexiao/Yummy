@@ -9,8 +9,23 @@
               label="收货地址"
               v-model="address"
               :items="addresses"
-              @input="onAddressChanged"
+              @change="reloadRestaurantList"
             ></v-select>
+            <v-flex></v-flex>
+            <v-text-field label="范围"
+                          v-model="distance"
+                          type="number"
+                          suffix="km以内"
+                          @keyup.enter="reloadRestaurantList"
+            ></v-text-field>
+          </v-toolbar>
+          <v-toolbar>
+            <v-text-field
+              label="搜索......"
+              v-model="searchCondition"
+              prepend-icon="search"
+              @keyup.enter="reloadRestaurantList"
+            ></v-text-field>
           </v-toolbar>
           <v-list two-line>
             <template v-for="(r, index) in list">
@@ -49,9 +64,11 @@ export default {
     return {
       address: '',
       addressMaps: {},
+      distance: 15,
       morePage: true,
       pageSize: 10,
-      list: []
+      list: [],
+      searchCondition: ''
     }
   },
   computed: {
@@ -60,6 +77,9 @@ export default {
     },
     aid: function () {
       return this.addressMaps[this.address]
+    },
+    searchMode: function () {
+      return this.searchCondition.length > 0
     }
   },
   methods: {
@@ -83,11 +103,15 @@ export default {
     },
     loadRestaurantList: function () {
       this.$ajax({
-        url: '/customer/order/restaurants',
+        url: this.searchMode ? '/restaurant/search' : '/customer/order/restaurants',
         method: 'get',
-        params: {
+        params: this.searchMode ? {
+          'name': this.searchCondition,
+          'pageStart': this.list.length,
+          'pageSize': this.pageSize
+        } : {
           'aid': this.aid,
-          'distance': 15,
+          'distance': this.distance,
           'pageStart': this.list.length,
           'pageSize': this.pageSize
         }
@@ -102,7 +126,7 @@ export default {
         }
       })
     },
-    onAddressChanged: function () {
+    reloadRestaurantList: function () {
       this.list.splice(0, this.list.length)
       this.loadRestaurantList()
     },

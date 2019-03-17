@@ -8,6 +8,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.sql.Timestamp;
+
 @Service
 @EnableTransactionManagement
 public class DeliveryConfirmation {
@@ -29,6 +31,7 @@ public class DeliveryConfirmation {
             throw new IllegalArgumentException("Order cannot be completed: " + oid);
         }
         order.setState(OrderState.COMPLETED);
+        order.setCompleteTime(new Timestamp(System.currentTimeMillis()));
         order.getCustomer().setLevel(calculateCustomerLevel(email));
     }
 

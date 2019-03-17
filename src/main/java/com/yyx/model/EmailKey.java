@@ -16,6 +16,7 @@ public class EmailKey implements Serializable {
     @JoinColumn(name = "email")
     private Customer customer;
 
+    @Column(name = "`key`")
     private String key;
 
     @Override

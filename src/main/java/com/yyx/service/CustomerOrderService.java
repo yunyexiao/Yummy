@@ -19,6 +19,9 @@ public interface CustomerOrderService {
      */
     List<Restaurant> getRestaurants(String email, long aid, double distance, int pageStart, int pageSize);
 
+    /**
+     * @return estimated delivery time in minutes
+     */
     int estimateDeliveryTime(String email, long aid, String rid);
 
     double calcCost(String email, String rid, Map<Long, Integer> items);

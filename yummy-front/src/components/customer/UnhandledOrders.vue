@@ -49,7 +49,7 @@
           <v-btn color="primary" @click="orderInfoDialog = false">关闭</v-btn>
           <v-btn
             color="warning"
-            @click.stop="cancelOrder(order)"
+            @click.stop="cancelOrder"
           >
             取消订单
           </v-btn>
@@ -206,9 +206,9 @@ export default {
         }
       }
     },
-    cancelOrder: function (order) {
+    cancelOrder: function () {
       this.$ajax({
-        url: '/customer/order/cancel/' + order.id,
+        url: '/customer/order/cancel/' + this.selectedOid,
         method: 'post'
       }).then(res => {
         if (res.data['AccessDenied']) {
@@ -216,7 +216,7 @@ export default {
         } else if (res.data.result === 0) {
           this.snackbar.msg = '订单正在取消。'
           this.snackbar.show = true
-          this.removeOrder(order.id)
+          this.removeOrder(this.selectedOid)
         } else if (res.data.result === 1) {
           this.snackbar.msg = '该订单无法取消。'
           this.snackbar.show = true

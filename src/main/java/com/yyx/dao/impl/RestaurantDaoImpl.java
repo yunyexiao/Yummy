@@ -49,6 +49,15 @@ public class RestaurantDaoImpl implements RestaurantDao {
     }
 
     @Override
+    public List<Restaurant> findByName(String name, int pageStart, int pageCount) {
+        return factory.getCurrentSession().createNamedQuery("Restaurant.getByName", Restaurant.class)
+                .setParameter("name", "%" + name + "%")
+                .setFirstResult(pageStart)
+                .setMaxResults(pageCount)
+                .getResultList();
+    }
+
+    @Override
     public List<Restaurant> find(AddressInfo addressInfo, double distance, int pageStart, int pageCount) {
         return factory.getCurrentSession().createNamedQuery("Restaurant.getByDistance", Restaurant.class)
                 .setParameter("latitude", addressInfo.getLatitude())
