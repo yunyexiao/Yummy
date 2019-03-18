@@ -14,6 +14,14 @@
             @input="reloadRestaurants"
           ></v-select>
         </v-flex>
+        <v-flex>
+          <v-text-field
+            label="搜索餐馆......"
+            v-model="searchCondition"
+            prepend-icon="search"
+            @keyup.enter="reloadRestaurants"
+          ></v-text-field>
+        </v-flex>
       </v-layout>
       <v-layout>
         <v-flex>
@@ -120,18 +128,30 @@ export default {
       },
       types: ['新餐馆', '餐馆信息修改'],
       type: '新餐馆',
+      searchCondition: '',
       pageSize: 10,
       morePage: true,
       infoDialog: false
     }
   },
+  computed: {
+    searchMode: function () {
+      return this.searchCondition.length > 0
+    }
+  },
   methods: {
     loadRestaurants: function () {
-      let urls = ['/admin/list/restaurant/invalid', '/admin/list/restaurant/drafted']
+      let listUrls = ['/admin/list/restaurant/invalid', '/admin/list/restaurant/drafted']
+      let searchUrls = ['/admin/search/restaurant/invalid', '/admin/search/restaurant/drafted']
+      let index = this.types.indexOf(this.type)
       this.$ajax({
-        url: urls[this.types.indexOf(this.type)],
+        url: this.searchMode ? searchUrls[index] : listUrls[index],
         method: 'get',
-        params: {
+        params: this.searchMode ? {
+          'name': this.searchCondition,
+          'pageStart': this.restaurants.length,
+          'pageSize': this.pageSize
+        } : {
           'pageStart': this.restaurants.length,
           'pageSize': this.pageSize
         }

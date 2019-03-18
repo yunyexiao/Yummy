@@ -19,16 +19,20 @@ public interface RestaurantDao {
      */
     @NonNull Restaurant find(@NonNull String id);
 
-    List<Restaurant> findByName(@NonNull String name, int pageStart, int pageCount);
+    @NonNull List<Restaurant> findByName(@NonNull String name, int pageStart, int pageSize);
 
     /**
      * Find restaurants by distance off the given address. All result restaurants are valid.
      */
-    @NonNull List<Restaurant> find(@NonNull AddressInfo addressInfo, double distance, int pageStart, int pageCount);
+    @NonNull List<Restaurant> find(@NonNull AddressInfo addressInfo, double distance, int pageStart, int pageSize);
 
     @NonNull List<Restaurant> findInvalid(int pageStart, int pageSize);
 
+    @NonNull List<Restaurant> findInvalidByName(String name, int pageStart, int pageSize);
+
     @NonNull List<Restaurant> findDrafted(int pageStart, int pageSize);
+
+    @NonNull List<Restaurant> findDraftedByName(String name, int pageStart, int pageSize);
 
     long count();
 }

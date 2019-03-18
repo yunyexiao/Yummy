@@ -66,11 +66,25 @@ public class AdminController {
         return ModelShower.convertRestaurants(restaurants);
     }
 
+    @GetMapping("/search/restaurant/drafted")
+    public Object searchDraftedRestaurants(@RequestParam("name") String name,
+                                           @RequestParam("pageStart") int pageStart,
+                                           @RequestParam("pageSize") int pageSize) {
+        return ModelShower.convertRestaurants(service.searchDraftedRestaurant(name, pageStart, pageSize));
+    }
+
     @GetMapping("/list/restaurant/invalid")
     public Object getInvalidRestaurants(@RequestParam("pageStart") int pageStart,
                                         @RequestParam("pageSize") int pageSize) {
         List<Restaurant> restaurants = service.getInvalidRestaurants(pageStart, pageSize);
         return ModelShower.convertRestaurants(restaurants);
+    }
+
+    @GetMapping("/search/restaurant/invalid")
+    public Object searchInvalidRestaurants(@RequestParam("name") String name,
+                                           @RequestParam("pageStart") int pageStart,
+                                           @RequestParam("pageSize") int pageSize) {
+        return ModelShower.convertRestaurants(service.searchInvalidRestaurants(name, pageStart, pageSize));
     }
 
     @GetMapping("/get/restaurant/{rid}")

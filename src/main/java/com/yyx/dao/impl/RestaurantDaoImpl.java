@@ -49,22 +49,22 @@ public class RestaurantDaoImpl implements RestaurantDao {
     }
 
     @Override
-    public List<Restaurant> findByName(String name, int pageStart, int pageCount) {
+    public List<Restaurant> findByName(String name, int pageStart, int pageSize) {
         return factory.getCurrentSession().createNamedQuery("Restaurant.getByName", Restaurant.class)
                 .setParameter("name", "%" + name + "%")
                 .setFirstResult(pageStart)
-                .setMaxResults(pageCount)
+                .setMaxResults(pageSize)
                 .getResultList();
     }
 
     @Override
-    public List<Restaurant> find(AddressInfo addressInfo, double distance, int pageStart, int pageCount) {
+    public List<Restaurant> find(AddressInfo addressInfo, double distance, int pageStart, int pageSize) {
         return factory.getCurrentSession().createNamedQuery("Restaurant.getByDistance", Restaurant.class)
                 .setParameter("latitude", addressInfo.getLatitude())
                 .setParameter("longitude", addressInfo.getLongitude())
                 .setParameter("distance", distance)
                 .setFirstResult(pageStart)
-                .setMaxResults(pageCount)
+                .setMaxResults(pageSize)
                 .getResultList();
     }
 
@@ -77,8 +77,26 @@ public class RestaurantDaoImpl implements RestaurantDao {
     }
 
     @Override
+    public List<Restaurant> findInvalidByName(String name, int pageStart, int pageSize) {
+        return factory.getCurrentSession().createNamedQuery("Restaurant.getInvalidByName", Restaurant.class)
+                .setParameter("name", "%" + name + "%")
+                .setFirstResult(pageStart)
+                .setMaxResults(pageSize)
+                .getResultList();
+    }
+
+    @Override
     public List<Restaurant> findDrafted(int pageStart, int pageSize) {
         return factory.getCurrentSession().createNamedQuery("Restaurant.getDrafted", Restaurant.class)
+                .setFirstResult(pageStart)
+                .setMaxResults(pageSize)
+                .getResultList();
+    }
+
+    @Override
+    public List<Restaurant> findDraftedByName(String name, int pageStart, int pageSize) {
+        return factory.getCurrentSession().createNamedQuery("Restaurant.getDraftedByName", Restaurant.class)
+                .setParameter("name", "%" + name + "%")
                 .setFirstResult(pageStart)
                 .setMaxResults(pageSize)
                 .getResultList();

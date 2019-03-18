@@ -71,15 +71,17 @@ public class AdminServiceImpl implements AdminService {
         switch (order.getState()) {
             case OrderState.COMPLETED: {
                 Transaction transaction = transactionDao.findPayment(oid);
-                double income = transaction.getAmount();
+                double income = transaction.getAmount() * RESTAURANT_INCOME_RATE;
                 transactionDao.insert(Transaction.builder()
                         .order(order)
                         .outAccount("YUMMY")
                         .inAccount(order.getRestaurant().getId())
-                        .amount(income * RESTAURANT_INCOME_RATE)
+                        .amount(income)
                         .time(new Timestamp(System.currentTimeMillis()))
                         .build());
                 order.setState(OrderState.SETTLED);
+                Restaurant restaurant = order.getRestaurant();
+                restaurant.setBalance(restaurant.getBalance() + income);
                 break;
             }
             case OrderState.CANCELING: {
@@ -97,10 +99,20 @@ public class AdminServiceImpl implements AdminService {
         return restaurantDao.findInvalid(pageStart, pageSize);
     }
 
+    @Override @Transactional(readOnly = true)
+    public List<Restaurant> searchInvalidRestaurants(String name, int pageStart, int pageSize) {
+        return restaurantDao.findInvalidByName(name, pageStart, pageSize);
+    }
+
     @Override
     @Transactional(readOnly = true)
     public List<Restaurant> getDraftedRestaurants(int pageStart, int pageSize) {
         return restaurantDao.findDrafted(pageStart, pageSize);
+    }
+
+    @Override @Transactional(readOnly = true)
+    public List<Restaurant> searchDraftedRestaurant(String name, int pageStart, int pageSize) {
+        return restaurantDao.findDraftedByName(name, pageStart, pageSize);
     }
 
     @Override

@@ -15,7 +15,11 @@ import java.util.List;
 @NamedQueries({
         @NamedQuery(name = "Restaurant.count", query = "select count(id) from Restaurant "),
         @NamedQuery(name = "Restaurant.getInvalid", query = "from Restaurant where valid = 0"),
+        @NamedQuery(name = "Restaurant.getInvalidByName",
+                query = "from Restaurant where valid = 0 and name like :name"),
         @NamedQuery(name = "Restaurant.getDrafted", query = "select r from Restaurant r join r.draft"),
+        @NamedQuery(name = "Restaurant.getDraftedByName",
+                query = "select r from Restaurant r join r.draft where r.name like :name"),
         @NamedQuery(name = "Restaurant.getByDistance",
         query = "from Restaurant where (" + DistanceUtil.EARTH_R + " * acos(" +
                 "cos(latitude * " + Math.PI + " / 180) * cos(:latitude * " + Math.PI + " / 180) * " +

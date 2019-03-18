@@ -1,15 +1,14 @@
 package com.yyx.service.impl;
 
 import com.yyx.dao.TransactionDao;
-import com.yyx.model.Order;
-import com.yyx.model.OrderState;
-import com.yyx.model.Transaction;
+import com.yyx.model.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.sql.Timestamp;
+import java.util.Optional;
 
 @Service
 @EnableTransactionManagement
@@ -58,24 +57,35 @@ public class OrderCancellation {
         if(index >= CANCEL_TIME.length) {
             throw new IllegalArgumentException("This order cannot be cancelled: " + order.getId());
         }
+        double backAmount = transaction.getAmount() * CANCEL_RETURNS[index];
         // transaction back to customer
         transactionDao.insert(Transaction.builder()
                 .order(order)
                 .outAccount("YUMMY")
                 .inAccount(transaction.getOutAccount())
-                .amount(transaction.getAmount() * CANCEL_RETURNS[index])
+                .amount(backAmount)
                 .time(new Timestamp(System.currentTimeMillis()))
                 .build());
+        Optional<PaymentAccount> op = order.getCustomer().getAccounts().stream()
+                .filter(a -> a.getId().equals(transaction.getOutAccount())).findFirst();
+        if (op.isPresent()) {
+            PaymentAccount p = op.get();
+            p.setBalance(p.getBalance() + backAmount);
+        } else {
+            throw new RuntimeException("Cannot find the customer's payment account: " + transaction.getOutAccount());
+        }
         // transaction to restaurant if having income
         if(index > 0) {
-            double income = transaction.getAmount() * (1 - CANCEL_RETURNS[index]);
+            double income = transaction.getAmount() - backAmount;
+            Restaurant r = order.getRestaurant();
             transactionDao.insert(Transaction.builder()
                     .order(order)
                     .outAccount("YUMMY")
-                    .inAccount(order.getRestaurant().getId())
+                    .inAccount(r.getId())
                     .amount(income * RESTAURANT_INCOME_RATE)
                     .time(new Timestamp(System.currentTimeMillis()))
                     .build());
+            r.setBalance(r.getBalance() + income);
         }
         order.setState(OrderState.CANCELLED);
     }

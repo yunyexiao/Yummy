@@ -26,7 +26,11 @@ public interface AdminService {
 
     List<Restaurant> getInvalidRestaurants(int pageStart, int pageSize);
 
+    List<Restaurant> searchInvalidRestaurants(String name, int pageStart, int pageSize);
+
     List<Restaurant> getDraftedRestaurants(int pageStart, int pageSize);
+
+    List<Restaurant> searchDraftedRestaurant(String name, int pageStart, int pageSize);
 
     /**
      * @param approved true to approve this restaurant, false to deny it

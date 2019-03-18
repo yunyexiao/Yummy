@@ -7,23 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="beda16b5-4a6a-42fa-985b-86942a60f06b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yyx/controller/RestaurantController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yyx/controller/RestaurantController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yyx/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yyx/controller/AdminController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yyx/dao/RestaurantDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yyx/dao/RestaurantDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yyx/dao/impl/RestaurantDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yyx/dao/impl/RestaurantDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yyx/model/EmailKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yyx/model/EmailKey.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yyx/model/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yyx/model/Restaurant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yyx/service/CustomerOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yyx/service/CustomerOrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yyx/service/RestaurantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yyx/service/RestaurantService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yyx/service/impl/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yyx/service/impl/CustomerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yyx/service/impl/DeliveryConfirmation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yyx/service/impl/DeliveryConfirmation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yyx/service/impl/RestaurantServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yyx/service/impl/RestaurantServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yummy-front/src/components/customer/OrderPlace.vue" beforeDir="false" afterPath="$PROJECT_DIR$/yummy-front/src/components/customer/OrderPlace.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yummy-front/src/components/customer/RestaurantList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/yummy-front/src/components/customer/RestaurantList.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yummy-front/src/components/customer/UnhandledOrders.vue" beforeDir="false" afterPath="$PROJECT_DIR$/yummy-front/src/components/customer/UnhandledOrders.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yummy-front/src/components/restaurant/InfoManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/yummy-front/src/components/restaurant/InfoManage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yummy-front/src/components/util/OrderInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/yummy-front/src/components/util/OrderInfo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yyx/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yyx/service/AdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yyx/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yyx/service/impl/AdminServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yyx/service/impl/OrderCancellation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yyx/service/impl/OrderCancellation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy-front/src/components/admin/RestaurantCheck.vue" beforeDir="false" afterPath="$PROJECT_DIR$/yummy-front/src/components/admin/RestaurantCheck.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -67,7 +58,45 @@
     <favorites_list name="Yummy" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/controller/AdminController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+              <folding>
+                <element signature="docComment;method#signIn#0;class#AdminController#0" />
+                <element signature="method#signIn#0;class#AdminController#0" />
+                <element signature="method#signOut#0;class#AdminController#0" />
+                <element signature="method#getDraftedRestaurants#0;class#AdminController#0" />
+                <element signature="method#getInvalidRestaurants#0;class#AdminController#0" />
+                <element signature="method#getRestaurantInfo#0;class#AdminController#0" />
+                <element signature="method#checkRestaurant#0;class#AdminController#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/yummy-front/src/components/admin/RestaurantCheck.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="150" column="38" selection-start-line="150" selection-start-column="38" selection-end-line="150" selection-end-column="38" />
+              <folding>
+                <element signature="n#v-list#0;n#v-flex#0;n#v-layout#2;n#v-flex#1;n#v-layout#0;n#template#0;n#!!top" />
+                <element signature="n#v-dialog#0;n#v-layout#0;n#template#0;n#!!top" />
+                <element signature="e#3382#3550#0" />
+                <element signature="e#3565#3717#0" />
+                <element signature="e#4504#4598#0" />
+                <element signature="e#4627#5745#0" />
+                <element signature="e#5788#6166#0" />
+                <element signature="e#6204#6389#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -114,8 +143,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/yummy-front/src/router/restaurant-routes.js" />
-        <option value="$PROJECT_DIR$/yummy-front/src/components/restaurant/FinancialStats.vue" />
         <option value="$PROJECT_DIR$/yummy-front/src/components/restaurant/MealManage.vue" />
         <option value="$PROJECT_DIR$/yummy-front/src/components/restaurant/PromotionManage.vue" />
         <option value="$PROJECT_DIR$/yummy-front/src/components/customer/Menu.vue" />
@@ -131,8 +158,6 @@
         <option value="$PROJECT_DIR$/yummy-front/src/components/customer/AddressManage.vue" />
         <option value="$PROJECT_DIR$/src/main/java/com/yyx/util/ModelShower.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yyx/controller/CustomerOrderController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yyx/controller/AdminController.java" />
-        <option value="$PROJECT_DIR$/yummy-front/src/components/admin/RestaurantCheck.vue" />
         <option value="$PROJECT_DIR$/yummy-front/src/router/admin-routes.js" />
         <option value="$PROJECT_DIR$/yummy-front/src/components/admin/Header.vue" />
         <option value="$PROJECT_DIR$/yummy-front/src/components/util/DatePicker.vue" />
@@ -140,7 +165,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/yyx/model/Transaction.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yyx/dao/impl/TransactionDaoImpl.java" />
         <option value="$PROJECT_DIR$/yummy-front/src/components/util/OrderList.vue" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yyx/service/impl/AdminServiceImpl.java" />
         <option value="$PROJECT_DIR$/yummy-front/src/components/admin/Statistics.vue" />
         <option value="$PROJECT_DIR$/src/main/java/com/yyx/listener/ServletListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yyx/model/Promotion.java" />
@@ -152,9 +176,6 @@
         <option value="$PROJECT_DIR$/yummy-front/src/components/customer/SignUp.vue" />
         <option value="$PROJECT_DIR$/src/main/java/com/yyx/service/impl/CustomerServiceImpl.java" />
         <option value="$PROJECT_DIR$/yummy-front/src/components/restaurant/InfoManage.vue" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yyx/model/Restaurant.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yyx/dao/RestaurantDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yyx/dao/impl/RestaurantDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yyx/service/RestaurantService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yyx/controller/RestaurantController.java" />
         <option value="$PROJECT_DIR$/yummy-front/src/components/customer/RestaurantList.vue" />
@@ -165,6 +186,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/yyx/service/impl/DeliveryConfirmation.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yyx/service/CustomerOrderService.java" />
         <option value="$PROJECT_DIR$/yummy-front/src/components/customer/OrderPlace.vue" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yyx/dao/RestaurantDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yyx/model/Restaurant.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yyx/dao/impl/RestaurantDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yyx/service/AdminService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yyx/controller/AdminController.java" />
+        <option value="$PROJECT_DIR$/yummy-front/src/components/admin/RestaurantCheck.vue" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yyx/service/impl/AdminServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yyx/service/impl/OrderCancellation.java" />
       </list>
     </option>
   </component>
@@ -270,15 +299,21 @@
               <item name="Yummy" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="yyx" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Yummy" type="b2602c69:ProjectViewProjectNode" />
               <item name="Yummy" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="yyx" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Yummy" type="b2602c69:ProjectViewProjectNode" />
@@ -484,12 +519,12 @@
       <workItem from="1550722496256" duration="52068000" />
       <workItem from="1550982658464" duration="21284000" />
       <workItem from="1551053121695" duration="46245000" />
-      <workItem from="1552723207517" duration="44003000" />
+      <workItem from="1552723207517" duration="51075000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="519984000" />
+    <option name="totallyTimeSpent" value="527056000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -503,7 +538,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="749" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49920508" visible="true" weight="0.2952816" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49920508" visible="true" weight="0.2952816" />
       <window_info id="Structure" order="1" sideWeight="0.5007949" side_tool="true" weight="0.24961948" />
       <window_info id="Web" order="2" side_tool="true" weight="0.32952815" />
       <window_info id="Persistence" order="3" sideWeight="0.5007949" side_tool="true" weight="0.24961948" />
@@ -511,7 +546,7 @@
       <window_info id="Favorites" order="5" side_tool="true" weight="0.32952815" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.5744" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4977169" weight="0.6016" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4977169" visible="true" weight="0.6016" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3418124" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -570,34 +605,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/5.1.4.RELEASE/spring-tx-5.1.4.RELEASE-sources.jar!/org/springframework/transaction/annotation/Transactional.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="33" column="33" lean-forward="true" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/listener/ServletListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/service/impl/OrderCancellation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-299">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/dao/impl/OrderDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-161">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-8-openjdk/src.zip!/java/util/Arrays.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="129">
@@ -819,34 +826,6 @@
     <entry file="file://$PROJECT_DIR$/yummy-front/src/components/util/NumField.vue">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/dao/impl/RestaurantDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="55" column="40" selection-start-line="55" selection-start-column="40" selection-end-line="55" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/dao/RestaurantDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="21" column="81" selection-start-line="21" selection-start-column="81" selection-end-line="21" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/model/Restaurant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/service/RestaurantService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="73" selection-start-line="23" selection-start-column="73" selection-end-line="23" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/yummy-front/src/components/restaurant/InfoManage.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -903,13 +882,6 @@
             <element signature="e#5226#5497#0" />
             <element signature="e#5530#5709#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/service/impl/CustomerOrderServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="50" column="15" selection-start-line="50" selection-start-column="15" selection-end-line="50" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -995,14 +967,418 @@
         <state relative-caret-position="-1449" />
       </provider>
     </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-575">
+          <caret line="1700" column="4" selection-start-line="1700" selection-start-column="4" selection-end-line="1700" selection-end-column="4" />
+          <folding>
+            <element signature="docComment;class#String#0" />
+            <element signature="e#4697#4744#0" />
+            <element signature="e#4782#4823#0" />
+            <element signature="e#4867#4930#0" />
+            <element signature="e#5008#5331#0" />
+            <element signature="e#5441#5653#0" />
+            <element signature="e#5718#6146#0" />
+            <element signature="e#5718#6261#0" />
+            <element signature="e#6267#6651#0" />
+            <element signature="e#6754#7584#0" />
+            <element signature="e#6754#8261#0" />
+            <element signature="e#7666#7740#1" />
+            <element signature="e#7765#8004#1" />
+            <element signature="e#7794#7875#1" />
+            <element signature="e#7916#7994#1" />
+            <element signature="e#8103#8185#1" />
+            <element signature="e#8267#9365#0" />
+            <element signature="e#8267#10768#0" />
+            <element signature="e#9451#9525#1" />
+            <element signature="e#9550#9794#1" />
+            <element signature="e#9579#9660#1" />
+            <element signature="e#9706#9784#1" />
+            <element signature="e#9898#9980#1" />
+            <element signature="e#10139#10403#1" />
+            <element signature="e#10546#10737#1" />
+            <element signature="e#10774#12245#0" />
+            <element signature="e#10774#12777#0" />
+            <element signature="e#12440#12570#1" />
+            <element signature="e#12484#12560#1" />
+            <element signature="e#12576#12743#1" />
+            <element signature="e#12646#12733#1" />
+            <element signature="e#12783#14034#0" />
+            <element signature="e#14154#14697#0" />
+            <element signature="e#14703#15937#0" />
+            <element signature="e#14703#16283#0" />
+            <element signature="e#16289#17494#0" />
+            <element signature="e#16289#17778#0" />
+            <element signature="e#17784#18710#0" />
+            <element signature="e#17784#18869#0" />
+            <element signature="e#18875#19728#0" />
+            <element signature="e#19838#20853#0" />
+            <element signature="e#19838#21026#0" />
+            <element signature="e#21032#21691#0" />
+            <element signature="e#21775#22129#0" />
+            <element signature="e#21775#22293#0" />
+            <element signature="e#22200#22287#0" />
+            <element signature="e#22299#22916#0" />
+            <element signature="e#23045#23469#0" />
+            <element signature="e#23475#23758#0" />
+            <element signature="e#23825#24039#0" />
+            <element signature="e#24116#24963#0" />
+            <element signature="e#24116#25160#0" />
+            <element signature="e#25052#25125#1" />
+            <element signature="e#25166#26198#0" />
+            <element signature="e#25166#26440#0" />
+            <element signature="e#26291#26364#1" />
+            <element signature="e#26446#27506#0" />
+            <element signature="e#26446#27764#0" />
+            <element signature="e#27622#27695#1" />
+            <element signature="e#27770#28715#0" />
+            <element signature="e#27770#29013#0" />
+            <element signature="e#28858#28920#1" />
+            <element signature="e#29019#29974#0" />
+            <element signature="e#29019#30271#0" />
+            <element signature="e#30090#30152#1" />
+            <element signature="e#30277#30414#0" />
+            <element signature="e#30537#31952#0" />
+            <element signature="e#30537#32444#0" />
+            <element signature="e#32058#32134#1" />
+            <element signature="e#32170#32244#1" />
+            <element signature="e#32276#32361#1" />
+            <element signature="e#32450#34312#0" />
+            <element signature="e#32450#34989#0" />
+            <element signature="e#34434#34510#1" />
+            <element signature="e#34546#34620#1" />
+            <element signature="e#34652#34737#1" />
+            <element signature="e#34933#34983#1" />
+            <element signature="e#34995#35719#0" />
+            <element signature="e#34995#35962#0" />
+            <element signature="e#35968#36667#0" />
+            <element signature="e#35968#36851#0" />
+            <element signature="e#36857#37360#0" />
+            <element signature="e#37463#38044#0" />
+            <element signature="e#37463#38684#0" />
+            <element signature="e#38120#38156#1" />
+            <element signature="e#38197#38656#1" />
+            <element signature="e#38335#38646#1" />
+            <element signature="e#38481#38603#1" />
+            <element signature="e#38690#39315#0" />
+            <element signature="e#39427#39801#0" />
+            <element signature="e#39611#39648#1" />
+            <element signature="e#39685#39774#1" />
+            <element signature="e#39719#39764#1" />
+            <element signature="e#39807#40451#0" />
+            <element signature="e#39807#41335#0" />
+            <element signature="e#40606#40898#1" />
+            <element signature="e#40652#40795#1" />
+            <element signature="e#40687#40781#0" />
+            <element signature="e#40801#40888#1" />
+            <element signature="e#40965#41007#1" />
+            <element signature="e#41138#41175#1" />
+            <element signature="e#41212#41308#1" />
+            <element signature="e#41253#41298#1" />
+            <element signature="e#41341#42527#0" />
+            <element signature="e#41341#42820#0" />
+            <element signature="e#42826#45156#0" />
+            <element signature="e#42826#45632#0" />
+            <element signature="e#45438#45598#1" />
+            <element signature="e#45524#45571#1" />
+            <element signature="e#45638#46127#0" />
+            <element signature="e#46274#47500#0" />
+            <element signature="e#46539#47371#0" />
+            <element signature="e#46732#47333#1" />
+            <element signature="e#46844#47319#1" />
+            <element signature="e#46984#47301#1" />
+            <element signature="e#47136#47279#1" />
+            <element signature="e#47381#47422#0" />
+            <element signature="e#47381#47494#0" />
+            <element signature="e#47506#48487#0" />
+            <element signature="e#48606#50184#0" />
+            <element signature="e#48606#50805#0" />
+            <element signature="e#50619#50656#1" />
+            <element signature="e#50683#50778#1" />
+            <element signature="e#50723#50768#1" />
+            <element signature="e#50811#53278#0" />
+            <element signature="e#50811#54848#0" />
+            <element signature="e#53733#53770#1" />
+            <element signature="e#53797#54821#1" />
+            <element signature="e#53889#53930#1" />
+            <element signature="e#53959#54785#1" />
+            <element signature="e#53977#54030#0" />
+            <element signature="e#54333#54382#1" />
+            <element signature="e#54399#54463#0" />
+            <element signature="e#54722#54771#1" />
+            <element signature="e#54854#55663#0" />
+            <element signature="e#54854#56162#0" />
+            <element signature="e#55976#56013#1" />
+            <element signature="e#56040#56135#1" />
+            <element signature="e#56080#56125#1" />
+            <element signature="e#56168#56751#0" />
+            <element signature="e#56848#57390#0" />
+            <element signature="e#57518#58044#0" />
+            <element signature="e#57518#58329#0" />
+            <element signature="e#58135#58305#1" />
+            <element signature="e#58221#58273#1" />
+            <element signature="e#58335#59446#0" />
+            <element signature="e#59522#61432#0" />
+            <element signature="e#59522#62187#0" />
+            <element signature="e#61546#61584#1" />
+            <element signature="e#61612#61699#1" />
+            <element signature="e#61758#62108#1" />
+            <element signature="e#61772#61826#0" />
+            <element signature="e#61974#62075#1" />
+            <element signature="e#62012#62061#1" />
+            <element signature="e#62114#62181#1" />
+            <element signature="e#62193#62275#0" />
+            <element signature="e#62193#62796#0" />
+            <element signature="e#62382#62771#1" />
+            <element signature="e#62638#62761#1" />
+            <element signature="e#62698#62747#1" />
+            <element signature="e#62802#63821#0" />
+            <element signature="e#63920#65675#0" />
+            <element signature="e#63920#66259#0" />
+            <element signature="e#65785#66176#1" />
+            <element signature="e#65799#65853#0" />
+            <element signature="e#66042#66143#1" />
+            <element signature="e#66080#66129#1" />
+            <element signature="e#66182#66253#1" />
+            <element signature="e#66265#66351#0" />
+            <element signature="e#66265#66859#0" />
+            <element signature="e#66462#66834#1" />
+            <element signature="e#66701#66824#1" />
+            <element signature="e#66761#66810#1" />
+            <element signature="e#66865#67418#0" />
+            <element signature="e#67499#68246#0" />
+            <element signature="e#67499#68411#0" />
+            <element signature="e#68417#68922#0" />
+            <element signature="e#68417#69199#0" />
+            <element signature="e#69205#69816#0" />
+            <element signature="e#69205#71034#0" />
+            <element signature="e#70019#70088#1" />
+            <element signature="e#70116#70154#1" />
+            <element signature="e#70185#70226#1" />
+            <element signature="e#70396#71009#1" />
+            <element signature="e#70478#70551#1" />
+            <element signature="e#70647#70999#1" />
+            <element signature="e#70875#70985#1" />
+            <element signature="e#71040#71706#0" />
+            <element signature="e#71806#72580#0" />
+            <element signature="e#71806#72753#0" />
+            <element signature="e#72759#73264#0" />
+            <element signature="e#72759#73549#0" />
+            <element signature="e#73555#74166#0" />
+            <element signature="e#73555#75559#0" />
+            <element signature="e#74554#74588#1" />
+            <element signature="e#74625#74672#1" />
+            <element signature="e#74746#74787#1" />
+            <element signature="e#75030#75553#1" />
+            <element signature="e#75089#75125#1" />
+            <element signature="e#75151#75193#1" />
+            <element signature="e#75337#75498#1" />
+            <element signature="e#75387#75484#1" />
+            <element signature="e#75565#76269#0" />
+            <element signature="e#75565#76656#0" />
+            <element signature="e#76344#76422#1" />
+            <element signature="e#76495#76569#1" />
+            <element signature="e#76662#77601#0" />
+            <element signature="e#76662#78160#0" />
+            <element signature="e#77690#77768#1" />
+            <element signature="e#77806#77882#1" />
+            <element signature="e#77951#78025#1" />
+            <element signature="e#78166#79170#0" />
+            <element signature="e#79303#80222#0" />
+            <element signature="e#79303#80529#0" />
+            <element signature="e#80326#80362#1" />
+            <element signature="e#80535#81859#0" />
+            <element signature="e#80535#82644#0" />
+            <element signature="e#81948#82617#1" />
+            <element signature="e#82101#82202#1" />
+            <element signature="e#82142#82188#1" />
+            <element signature="e#82228#82607#1" />
+            <element signature="e#82318#82374#1" />
+            <element signature="e#82407#82547#1" />
+            <element signature="e#82650#83571#0" />
+            <element signature="e#83671#83923#0" />
+            <element signature="e#84024#85630#0" />
+            <element signature="e#84024#85782#0" />
+            <element signature="e#85788#87395#0" />
+            <element signature="e#85788#87543#0" />
+            <element signature="e#87549#88083#0" />
+            <element signature="e#87549#88324#0" />
+            <element signature="e#88330#92076#0" />
+            <element signature="e#88330#94206#0" />
+            <element signature="e#92892#94142#1" />
+            <element signature="e#93094#93498#1" />
+            <element signature="e#93153#93260#1" />
+            <element signature="e#93266#93484#1" />
+            <element signature="e#93271#93282#0" />
+            <element signature="e#93864#94014#1" />
+            <element signature="e#93947#94000#1" />
+            <element signature="e#94212#95554#0" />
+            <element signature="e#95640#96532#0" />
+            <element signature="e#95640#96949#0" />
+            <element signature="e#96870#96909#1" />
+            <element signature="e#96955#98443#0" />
+            <element signature="e#96955#98818#0" />
+            <element signature="e#98739#98778#1" />
+            <element signature="e#98824#101101#0" />
+            <element signature="e#98824#104719#0" />
+            <element signature="e#101177#101234#1" />
+            <element signature="e#101390#102112#1" />
+            <element signature="e#101446#102077#1" />
+            <element signature="e#101612#101889#1" />
+            <element signature="e#101746#101805#1" />
+            <element signature="e#101895#102063#1" />
+            <element signature="e#101952#102011#1" />
+            <element signature="e#102708#104655#1" />
+            <element signature="e#102879#102993#1" />
+            <element signature="e#102999#103044#1" />
+            <element signature="e#103186#103327#1" />
+            <element signature="e#103333#103408#1" />
+            <element signature="e#103534#104564#1" />
+            <element signature="e#103586#103734#1" />
+            <element signature="e#103759#103911#1" />
+            <element signature="e#103917#104003#1" />
+            <element signature="e#104140#104358#1" />
+            <element signature="e#104408#104497#1" />
+            <element signature="e#104570#104645#1" />
+            <element signature="e#104725#105639#0" />
+            <element signature="e#105734#107568#0" />
+            <element signature="e#105734#111232#0" />
+            <element signature="e#107644#107701#1" />
+            <element signature="e#107857#108604#1" />
+            <element signature="e#107913#108569#1" />
+            <element signature="e#108113#108236#1" />
+            <element signature="e#108242#108295#1" />
+            <element signature="e#108464#108515#1" />
+            <element signature="e#109188#111168#1" />
+            <element signature="e#109355#109469#1" />
+            <element signature="e#109475#109520#1" />
+            <element signature="e#109554#109654#1" />
+            <element signature="e#109660#109737#1" />
+            <element signature="e#109863#111077#1" />
+            <element signature="e#109915#110247#1" />
+            <element signature="e#109958#110118#1" />
+            <element signature="e#110124#110229#1" />
+            <element signature="e#110272#110424#1" />
+            <element signature="e#110430#110516#1" />
+            <element signature="e#110653#110871#1" />
+            <element signature="e#110921#111010#1" />
+            <element signature="e#111083#111158#1" />
+            <element signature="e#111238#112160#0" />
+            <element signature="e#112255#113799#0" />
+            <element signature="e#112255#114183#0" />
+            <element signature="e#113986#114015#1" />
+            <element signature="e#114068#114098#1" />
+            <element signature="e#114189#114310#0" />
+            <element signature="e#114374#114667#0" />
+            <element signature="e#114374#114920#0" />
+            <element signature="e#114926#116521#0" />
+            <element signature="e#114926#116656#0" />
+            <element signature="e#116662#118336#0" />
+            <element signature="e#116662#118482#0" />
+            <element signature="e#118488#118844#0" />
+            <element signature="e#118959#119355#0" />
+            <element signature="e#119448#120383#0" />
+            <element signature="e#120514#121082#0" />
+            <element signature="e#121217#121428#0" />
+            <element signature="e#121525#121841#0" />
+            <element signature="e#121936#122188#0" />
+            <element signature="e#121936#122303#0" />
+            <element signature="e#122309#122683#0" />
+            <element signature="e#122773#123139#0" />
+            <element signature="e#123227#123599#0" />
+            <element signature="e#123689#124068#0" />
+            <element signature="e#124160#125270#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.4.0.Final/hibernate-core-5.4.0.Final-sources.jar!/org/hibernate/query/Query.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="165" lean-forward="true" selection-start-line="165" selection-end-line="165" />
+          <folding>
+            <element signature="e#5582#5583#0" expanded="true" />
+            <element signature="e#5602#5603#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/dao/impl/RestaurantDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
+          <folding>
+            <element signature="method#delete#0;class#RestaurantDaoImpl#0" />
+            <element signature="e#1045#1096#1" />
+            <element signature="method#find#0;class#RestaurantDaoImpl#0" />
+            <element signature="e#1277#1319#1" />
+            <element signature="e#1325#1408#1" />
+            <element signature="method#findByName#0;class#RestaurantDaoImpl#0" />
+            <element signature="method#find#1;class#RestaurantDaoImpl#0" />
+            <element signature="method#findInvalid#0;class#RestaurantDaoImpl#0" />
+            <element signature="method#findDrafted#0;class#RestaurantDaoImpl#0" />
+            <element signature="method#count#0;class#RestaurantDaoImpl#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/dao/RestaurantDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="34" column="87" selection-start-line="34" selection-start-column="87" selection-end-line="34" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/model/Restaurant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#2181#2182#0" expanded="true" />
+            <element signature="e#2214#2215#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/service/RestaurantService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="73" selection-start-line="23" selection-start-column="73" selection-end-line="23" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/service/impl/CustomerOrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1044">
+          <caret line="50" column="15" selection-start-line="50" selection-start-column="15" selection-end-line="50" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/service/impl/OrderCancellation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="e#444#452#0" />
+            <element signature="method#OrderCancellation#0;class#OrderCancellation#0" />
+            <element signature="method#cancel#0;class#OrderCancellation#0" />
+            <element signature="e#1250#1412#1" />
+            <element signature="e#1502#1873#1" />
+            <element signature="e#1720#1838#1" />
+            <element signature="e#2261#2293#1" />
+            <element signature="e#2334#2445#1" />
+            <element signature="method#canCancel#0;class#OrderCancellation#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/service/impl/AdminServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="61" column="40" selection-start-line="61" selection-start-column="40" selection-end-line="61" selection-end-column="40" />
+        <state relative-caret-position="152">
+          <caret line="87" column="39" lean-forward="true" selection-start-line="87" selection-start-column="39" selection-end-line="87" selection-end-column="39" />
           <folding>
             <element signature="method#AdminServiceImpl#0;class#AdminServiceImpl#0" />
             <element signature="method#signIn#0;class#AdminServiceImpl#0" />
-            <element signature="method#settleOrder#0;class#AdminServiceImpl#0" />
             <element signature="method#getInvalidRestaurants#0;class#AdminServiceImpl#0" />
             <element signature="method#getDraftedRestaurants#0;class#AdminServiceImpl#0" />
             <element signature="method#checkRestaurant#0;class#AdminServiceImpl#0" />
@@ -1013,24 +1389,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/service/AdminService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+        <state relative-caret-position="366">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yyx/controller/AdminController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="52" column="57" selection-start-line="52" selection-start-column="57" selection-end-line="52" selection-end-column="57" />
+        <state>
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
           <folding>
             <element signature="docComment;method#signIn#0;class#AdminController#0" />
             <element signature="method#signIn#0;class#AdminController#0" />
             <element signature="method#signOut#0;class#AdminController#0" />
-            <element signature="method#settleOrder#0;class#AdminController#0" />
             <element signature="method#getDraftedRestaurants#0;class#AdminController#0" />
             <element signature="method#getInvalidRestaurants#0;class#AdminController#0" />
             <element signature="method#getRestaurantInfo#0;class#AdminController#0" />
             <element signature="method#checkRestaurant#0;class#AdminController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yummy-front/src/components/admin/RestaurantCheck.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="150" column="38" selection-start-line="150" selection-start-column="38" selection-end-line="150" selection-end-column="38" />
+          <folding>
+            <element signature="n#v-list#0;n#v-flex#0;n#v-layout#2;n#v-flex#1;n#v-layout#0;n#template#0;n#!!top" />
+            <element signature="n#v-dialog#0;n#v-layout#0;n#template#0;n#!!top" />
+            <element signature="e#3382#3550#0" />
+            <element signature="e#3565#3717#0" />
+            <element signature="e#4504#4598#0" />
+            <element signature="e#4627#5745#0" />
+            <element signature="e#5788#6166#0" />
+            <element signature="e#6204#6389#0" />
           </folding>
         </state>
       </provider>
