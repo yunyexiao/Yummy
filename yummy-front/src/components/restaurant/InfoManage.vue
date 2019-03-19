@@ -8,7 +8,7 @@
       <v-layout justify-space-around>
         <h4>编号：{{generalInfo.id}}</h4>
         <h4>状态：{{generalInfo.valid ? '已上线' : '未上线'}}</h4>
-        <h4>余额：{{generalInfo.balance}}</h4>
+        <h4>余额：{{generalInfo.balance.toFixed(2)}}</h4>
       </v-layout>
       <v-layout>
         <v-expansion-panel expand v-model="expansion">

@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class EmailHelper {
-    private static final String fromId = "yummyyyx@163.com";
+    private static final String fromId = "yexiaoyun.cz@qq.com";
 
     private MailSender sender;
 

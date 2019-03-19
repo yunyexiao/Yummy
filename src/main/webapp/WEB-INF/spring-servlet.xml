@@ -48,15 +48,16 @@
     </bean>
 
     <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
-        <property name="host" value="smtp.163.com" />
-		<property name="port" value="25" />
-		<property name="username" value="yummyyyx@163.com" />
-		<property name="password" value="yummy0test" />
+        <property name="host" value="smtp.qq.com" />
+		<property name="port" value="465" />
+		<property name="username" value="yexiaoyun.cz@qq.com" />
+		<property name="password" value="pvlizdskcveedghi" />
 
 		<!-- The name of the property, following JavaBean naming conventions -->
 		<property name="javaMailProperties">
 			<props>
 				<prop key="mail.transport.protocol">smtp</prop>
+                <prop key="mail.smtp.ssl.enable">true</prop>
 				<prop key="mail.smtp.auth">true</prop>
 				<prop key="mail.smtp.starttls.enable">true</prop>
 				<prop key="mail.debug">true</prop>
